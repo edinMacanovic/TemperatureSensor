@@ -1,5 +1,5 @@
 using static System.String;
-using static CalculationTemperature.CalculationMethods;
+using static TemperatureConverter.Models.CalculationMethods;
 
 namespace TemperatureConverter.GUI;
 

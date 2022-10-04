@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureConverter.GUI", "TemperatureSensor\TemperatureConverter.GUI.csproj", "{0632488D-8673-4F28-A956-7F84E4685326}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculationTemperature", "CalculationMethodsTemperature\CalculationTemperature.csproj", "{ED8C81AA-86CA-4476-A3F9-51B4D73E3D25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TemperatureConverter.Models", "CalculationMethodsTemperature\TemperatureConverter.Models.csproj", "{ED8C81AA-86CA-4476-A3F9-51B4D73E3D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

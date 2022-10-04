@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CalculationMethodsTemperature\CalculationTemperature.csproj" />
+    <ProjectReference Include="..\CalculationMethodsTemperature\TemperatureConverter.Models.csproj" />
   </ItemGroup>
 
 </Project>
