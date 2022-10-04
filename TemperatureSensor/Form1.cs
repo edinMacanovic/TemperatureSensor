@@ -3,13 +3,28 @@ using static TemperatureConverter.Models.CalculationMethods;
 
 namespace TemperatureConverter.GUI;
 
+/// <summary>
+/// This class contains the GUI for the temperature converter.
+/// </summary>
+
 public partial class Form1 : Form
 {
+    /// <summary>
+    /// This Method is the Constructor for the Form1.
+    /// </summary>
     public Form1()
     {
         InitializeComponent();
     }
 
+    
+
+    /// <summary>
+    /// The radioButton1_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// When the Value of the RadioButton 1 change this Method is called and the Value of the TextBox1 is converted to Celsius.
+    /// </remarks>
     public void radioButton1_CheckedChanged(object sender, EventArgs e)
     {
         if (IsNullOrEmpty(textBox1.Text))
@@ -30,6 +45,15 @@ public partial class Form1 : Form
         }
     }
 
+
+
+    
+    /// <summary>
+    /// The radioButton2_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// When the Value of the RadioButton 2 change this Method is called and the Value of the TextBox1 is converted to Fahrenheit.
+    /// </remarks>
     public void radioButton2_CheckedChanged(object sender, EventArgs e)
     {
         if (IsNullOrEmpty(textBox1.Text))
@@ -51,6 +75,15 @@ public partial class Form1 : Form
 
     }
 
+
+
+    
+    /// <summary>
+    /// The radioButton3_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// When the Value of the RadioButton 3 change this Method is called and the Value of the TextBox1 is converted to Kelvin.
+    /// </remarks>
     public void radioButton3_CheckedChanged(object sender, EventArgs e)
     {
         //Validation for Kelvin
@@ -72,6 +105,16 @@ public partial class Form1 : Form
         }
     }
 
+
+
+
+    
+    /// <summary>
+    /// The radioButton3_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// When the Value of the RadioButton 4 change this Method is called and the Value of the TextBox1 is converted to Celsius.
+    /// </remarks>
     public void radioButton4_CheckedChanged(object sender, EventArgs e)
     {
         if (IsNullOrEmpty(textBox1.Text))
@@ -92,11 +135,29 @@ public partial class Form1 : Form
         }
     }
 
-    private void button2_Click(object sender, EventArgs e)
+
+
+    
+    /// <summary>
+    /// The radioButton1_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    ///  When you click on the Button Clear all Values of the GUI are cleared.
+    /// </remarks>
+    private void ClearAllValues(object sender, EventArgs e)
     {
         ClearAll();
     }
 
+
+
+    
+    /// <summary>
+    /// The radioButton1_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// This Method is called when you call the ClearAllValues Method.
+    /// </remarks>
     private void ClearAll()
     {
         textBox1.Clear();
@@ -109,7 +170,16 @@ public partial class Form1 : Form
         label4.Text = "";
     }
 
-    private void button1_Click(object sender, EventArgs e)
+
+
+    
+    /// <summary>
+    /// The radioButton1_CheckedChanged method.
+    /// </summary>
+    /// <remarks>
+    /// When you click on the Button Exit the Application is closed.
+    /// </remarks>
+    private void CloseButton(object sender, EventArgs e)
     {
         Close();
     }
